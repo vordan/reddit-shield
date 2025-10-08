@@ -50,5 +50,5 @@ Desktop.ini
 *.backup
 backup_*
 
-# Claude/AI specific
+# Development
 .claude/

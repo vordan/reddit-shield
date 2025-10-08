@@ -3,7 +3,7 @@
   "name": "RedditShield",
   "version": "1.5",
   "description": "Reddit content filtering with cross-device sync. Filter users, keywords, and subreddits with a 3-column interface. Features thread cleanup and Chrome sync.",
-  "author": "Vanco Ordanoski <vordan@infoproject.biz> - Original by Joseph Jiayi Kan (https://github.com/JosephKan3/redditFilters)",
+  "author": "Vanco Ordanoski <vordan@infoproject.biz>",
   "homepage_url": "https://github.com/vordan/reddit-shield",
   "permissions": ["activeTab", "storage", "tabs"],
   "background": {

@@ -153,12 +153,8 @@ Filters are stored locally or in Chrome's sync storage. The extension operates c
 
 ## Attribution
 
-RedditShield is based on the **redditFilters** project by **Joseph Jiayi Kan**.
-
-- **Original Project:** [redditFilters](https://github.com/JosephKan3/redditFilters)
-- **Original Author:** Joseph Jiayi Kan
-- **Enhanced by:** Vanco Ordanoski <vordan@infoproject.biz>
-- **Enhancements:** UI redesign, cross-device sync, code refactoring
+- **Project Idea from:** [redditFilters](https://github.com/JosephKan3/redditFilters) by Joseph Jiayi Kan
+- **Programmed by:** Vanco Ordanoski <vordan@infoproject.biz>
 
 ## Contributing
 
@@ -168,5 +164,4 @@ Submit issues and suggestions at: [https://github.com/vordan/reddit-shield](http
 
 This project is licensed under the MIT License - see the [LICENSE](src/LICENSE) file for details.
 
-Original work Copyright (c) 2024 Joseph Jiayi Kan  
-Modifications Copyright (c) 2024 Vanco Ordanoski
+Copyright (c) 2025 Vanco Ordanoski
