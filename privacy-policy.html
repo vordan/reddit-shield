@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RedditShield</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #008b8b;
+        }
+        h2 {
+            color: #20b2aa;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #495057;
+            margin-top: 20px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        .last-updated {
+            font-style: italic;
+            color: #666;
+        }
+        a {
+            color: #008b8b;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for RedditShield</h1>
+    <p class="last-updated">Last Updated: October 8, 2025</p>
+
+    <h2>Overview</h2>
+    <p>RedditShield is a Chrome extension that filters Reddit content based on user-defined criteria. This privacy policy explains how the extension handles data.</p>
+
+    <h2>Data Collection</h2>
+    <p>RedditShield does not collect, transmit, or share any personal information. All data processing occurs locally in your browser.</p>
+
+    <h2>Data Storage</h2>
+    <p>The extension stores the following data locally on your device:</p>
+    <ul>
+        <li><strong>Filter Lists:</strong> Usernames, keywords, subreddit names, and domain names you add to your filters</li>
+        <li><strong>Preferences:</strong> Settings such as logging status and synchronization preferences</li>
+        <li><strong>Badge Counter:</strong> Temporary count of filtered items per browser tab</li>
+    </ul>
+
+    <h3>Storage Location</h3>
+    <p>Data is stored using Chrome's Storage API in one of two locations based on your preference:</p>
+    <ul>
+        <li><strong>Local Storage</strong> (<code>chrome.storage.local</code>): Data remains on your device only</li>
+        <li><strong>Sync Storage</strong> (<code>chrome.storage.sync</code>): Data synchronizes across devices signed into the same Chrome account</li>
+    </ul>
+    <p>When synchronization is enabled, Chrome handles the sync process according to Google's sync policies. RedditShield does not control or access this synchronization mechanism beyond using Chrome's standard API.</p>
+
+    <h2>Data Usage</h2>
+    <p>The extension uses your filter data solely to:</p>
+    <ul>
+        <li>Hide posts and comments matching your filter criteria</li>
+        <li>Display the count of filtered items in the browser toolbar badge</li>
+        <li>Populate the extension popup interface with your current filter settings</li>
+    </ul>
+    <p>No data leaves your browser except through Chrome's built-in sync feature when you enable that option.</p>
+
+    <h2>Permissions</h2>
+    <p>The extension requires the following Chrome permissions:</p>
+    <ul>
+        <li><strong>storage:</strong> To save your filter lists and preferences</li>
+        <li><strong>activeTab:</strong> To access and filter content on Reddit pages you visit</li>
+        <li><strong>tabs:</strong> To update the badge counter on the extension icon</li>
+    </ul>
+    <p>These permissions are used exclusively for the extension's filtering functionality. No data from these permissions is transmitted externally.</p>
+
+    <h2>Third-Party Access</h2>
+    <p>RedditShield does not:</p>
+    <ul>
+        <li>Send data to external servers</li>
+        <li>Use analytics or tracking services</li>
+        <li>Share information with third parties</li>
+        <li>Include advertisements or trackers</li>
+    </ul>
+
+    <h2>Data Security</h2>
+    <p>All filter data remains within your browser's storage. The extension does not implement additional encryption beyond what Chrome provides for its storage APIs.</p>
+
+    <h2>User Control</h2>
+    <p>You have complete control over your data:</p>
+    <ul>
+        <li>View and edit all filter lists through the extension popup</li>
+        <li>Delete filters at any time</li>
+        <li>Disable the extension to stop all filtering</li>
+        <li>Uninstall the extension to remove all stored data</li>
+    </ul>
+    <p>Uninstalling the extension removes all locally stored data. If sync is enabled, you may need to clear synced data separately through Chrome settings.</p>
+
+    <h2>Changes to Privacy Policy</h2>
+    <p>Updates to this policy will be posted with a new "Last Updated" date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Open Source</h2>
+    <p>RedditShield is open source. You can review the complete source code at:<br>
+    <a href="https://github.com/vordan/reddit-shield">https://github.com/vordan/reddit-shield</a></p>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy or the extension's data practices:</p>
+    <p>
+        <strong>Developer:</strong> Vanco Ordanoski<br>
+        <strong>Email:</strong> vordan@infoproject.biz<br>
+        <strong>GitHub:</strong> <a href="https://github.com/vordan/reddit-shield/issues">https://github.com/vordan/reddit-shield/issues</a>
+    </p>
+</body>
+</html>
