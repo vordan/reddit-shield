@@ -1,8 +1,8 @@
 /*
  * RedditShield Popup Styles
- * 3-column layout with modern design elements
+ * Modern design elements for filter management
  *
- * @version 1.5
+ * @version 1.51
  * @author Vanco Ordanoski <vordan@infoproject.biz>
  * @date 2025-10-08
  */
@@ -84,7 +84,7 @@ h1 {
 	transform: scale(0.95);
 }
 
-/* Three Column Layout */
+/* Filter Lists Layout */
 .columns-container {
 	display: flex;
 	gap: 16px;

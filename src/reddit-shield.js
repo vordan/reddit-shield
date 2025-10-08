@@ -29,7 +29,7 @@
  * - Reloads and reapplies filters when storage changes
  * - Supports migration between storage types
  *
- * @version 1.5
+ * @version 1.51
  * @author Vanco Ordanoski <vordan@infoproject.biz>
  * @date 2025-10-08
  */

@@ -1,6 +1,6 @@
 # RedditShield
 
-RedditShield is a Chrome extension that provides content filtering for Reddit. Filter specific users, keywords, subreddits, and domains with cross-device synchronization and a 3-column interface.
+RedditShield is a Chrome extension that provides content filtering for Reddit. Filter specific users, keywords, subreddits, and domains with cross-device synchronization.
 
 ## Features
 
@@ -12,7 +12,6 @@ RedditShield is a Chrome extension that provides content filtering for Reddit. F
 - **Smart Cleanup Buttons:** Per-list buttons to manage filters from current page
 - **Thread Cleanup:** Filter all users from the current thread
 - **Cross-Device Sync:** Sync filters across Chrome installations
-- **3-Column UI:** Compact layout for filter management
 - **Debug Logging:** Colored console logging for debugging
 
 ## Installation
@@ -30,7 +29,7 @@ RedditShield is a Chrome extension that provides content filtering for Reddit. F
 
 ## Usage
 
-Click the RedditShield icon in the Chrome toolbar to access the 3-column interface:
+Click the RedditShield icon in the Chrome toolbar to access the popup interface:
 
 ### Filter Management
 - **Filtered Users:** Enter usernames, one per line ("u/" prefix optional)
@@ -132,19 +131,16 @@ RedditShield requires the following permissions:
 
 ## Version History
 
+### Version 1.51 (2025-10-08)
+- **Reddit-Only Operation:** Extension now only functions on reddit.com and its subdomains
+- **Popup Protection:** Popup automatically closes when not on Reddit
+
 ### Version 1.5 (2025-10-08)
 - **Badge Counter:** Real-time filtered items counter on extension icon
 - **Close Button:** Added × button to popup header for easy closing
 - **Smart Cleanup Buttons:** Per-list cleanup buttons for keywords and subreddits
 - **Improved Accuracy:** Badge counter accumulates properly across page scrolling
 - **Better UX:** Visual feedback showing filtering effectiveness
-
-### Version 1.4 (2025-01-07)
-- UI redesign with 3-column layout
-- Removed image expansion feature
-- Updated thread cleanup functionality with per-list buttons
-- Responsive layout optimization
-- Improved terminology: "filter" instead of "block"
 
 
 ## Privacy

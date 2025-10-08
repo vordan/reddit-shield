@@ -2,8 +2,8 @@
  * RedditShield Popup Controller
  *
  * This module manages the extension's popup interface and handles user interactions
- * with filtering controls. It provides a 3-column layout for managing filtered users,
- * keywords, and subreddits, along with preference settings for logging and sync.
+ * with filtering controls. It manages filtered users, keywords, and subreddits,
+ * along with preference settings for logging and sync.
  *
  * Key functionality:
  * - Data persistence using Chrome Storage API (local or sync)
@@ -20,7 +20,7 @@
  * - Preference flags: loggingEnabled, filterUsers, filterKeywords, filterSubreddits, filterDomains
  * - enableSync: Controls whether to use chrome.storage.sync or chrome.storage.local
  *
- * @version 1.5
+ * @version 1.51
  * @author Vanco Ordanoski <vordan@infoproject.biz>
  * @date 2025-10-08
  */
@@ -33,8 +33,17 @@ const cls_redditShieldPopup = function(_options) {
 
 	// Initialize the popup controller
 	function _initialize() {
-		_events_render();
-		_data_load();
+		// Check if current tab is on Reddit
+		chrome.tabs.query({ active: true, currentWindow: true }, function(_tabs) {
+			if (!_tabs[0] || !_tabs[0].url || !_tabs[0].url.includes('reddit.com')) {
+				// Not on Reddit - close popup immediately
+				window.close();
+				return;
+			}
+			// On Reddit - continue with normal initialization
+			_events_render();
+			_data_load();
+		});
 	}
 
 	// Set up event listeners for UI controls
