@@ -17,11 +17,16 @@ RedditShield is a Chrome extension that provides content filtering for Reddit. F
 
 ## Installation
 
-1. Download the `RedditShield.zip` file and unzip it on your computer.
-2. Open Chrome and navigate to `chrome://extensions/`.
-3. Enable "Developer mode" at the top right corner of the page.
-4. Click on "Load unpacked" and select the unzipped folder of RedditShield.
-5. The extension should now appear in your list of extensions and is ready to use.
+### From Source
+1. Clone or download this repository
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" at the top right corner
+4. Click "Load unpacked" and select the `src/` folder
+5. The extension should now appear in your list of extensions and is ready to use
+
+### From Release
+1. Download the `RedditShield.zip` file from releases
+2. Extract and follow steps 2-5 above
 
 ## Usage
 
@@ -51,6 +56,24 @@ Each filter list has its own cleanup button:
 - **Sync Across Devices:** Use Chrome sync storage instead of local storage
 
 Settings save automatically and apply to current and future sessions.
+
+## Project Structure
+
+```
+reddit-shield/
+├── src/                    # Extension source files
+│   ├── assets/            # Icons and images
+│   ├── manifest.json      # Extension configuration
+│   ├── background.js      # Service worker for badge management
+│   ├── reddit-shield.js   # Content script for filtering
+│   ├── popup.html         # Popup interface
+│   ├── popup.js           # Popup controller
+│   ├── popup.css          # Popup styling
+│   └── LICENSE
+├── dist/                  # Build artifacts (git-ignored)
+├── .gitignore
+└── README.md
+```
 
 ## Technical Implementation
 
@@ -143,7 +166,7 @@ Submit issues and suggestions at: [https://github.com/vordan/reddit-shield](http
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](src/LICENSE) file for details.
 
 Original work Copyright (c) 2024 Joseph Jiayi Kan  
 Modifications Copyright (c) 2024 Vanco Ordanoski
