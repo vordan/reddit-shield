@@ -1,0 +1,134 @@
+<!--
+	RedditShield Popup Interface
+	3-column layout for managing content filters
+
+	@version 1.5
+	@author Vanco Ordanoski <vordan@infoproject.biz>
+	@date 2025-10-08
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RedditShield</title>
+		<link rel="stylesheet" href="./popup.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1><img src="assets/favicon/favicon-32x32.png" alt="RedditShield" class="logo"> RedditShield</h1>
+				<button class="close-button" id="closeButton" title="Close">&times;</button>
+			</header>
+
+			<!-- Three Column Layout -->
+			<div class="columns-container">
+
+				<!-- Column 1: Keywords -->
+				<div class="column">
+					<div class="filter-section">
+						<div class="toggle">
+							<h2>Filtered Keywords</h2>
+							<label class="switch">
+								<input type="checkbox" id="filterKeywords" checked />
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<textarea
+							class="inputList"
+							id="keywordList"
+							placeholder="Enter each keyword on a new line"
+						></textarea>
+						<button class="cleanup-button-small" id="cleanupKeywordsButton">
+							Clear from current page
+						</button>
+						<p class="cleanup-description-small">
+							Remove keywords that appear in the current page
+						</p>
+					</div>
+				</div>
+
+				<!-- Column 2: Subreddits -->
+				<div class="column">
+					<div class="filter-section">
+						<div class="toggle">
+							<h2>Filtered Subreddits</h2>
+							<label class="switch">
+								<input type="checkbox" id="filterSubreddits" checked />
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<textarea
+							class="inputList"
+							id="subredditList"
+							placeholder="Enter each subreddit on a new line"
+						></textarea>
+						<button class="cleanup-button-small" id="cleanupSubredditsButton">
+							Clear from current page
+						</button>
+						<p class="cleanup-description-small">
+							Remove subreddits that appear in the current page
+						</p>
+					</div>
+				</div>
+
+				<!-- Column 3: Users -->
+				<div class="column">
+					<div class="filter-section">
+						<div class="toggle">
+							<h2>Filtered Users</h2>
+							<label class="switch">
+								<input type="checkbox" id="filterUsers" checked />
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<textarea
+							class="inputList"
+							id="userList"
+							placeholder="Enter each user on a new line"
+						></textarea>
+						<button class="cleanup-button-small" id="cleanupUsersButton">
+							Filter current thread
+						</button>
+						<p class="cleanup-description-small" id="cleanupUsersDescription">
+							Filter all visible users in the current thread
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Preferences Section -->
+			<div class="preferences-section">
+				<div class="preference-item">
+					<label class="preference-label">
+						<input type="checkbox" id="loggingEnabled" checked />
+						<span class="preference-text">Print Logs</span>
+					</label>
+				</div>
+				<div class="preference-item">
+					<label class="preference-label">
+						<input type="checkbox" id="enableSync" checked />
+						<span class="preference-text">Sync Across Devices</span>
+					</label>
+				</div>
+			</div>
+
+			<!-- Domains (Hidden for now) -->
+			<div style="display: none;">
+				<div class="toggle">
+					<h2>Filtered News Domains</h2>
+					<label class="switch">
+						<input type="checkbox" id="filterDomains" checked />
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<textarea
+					class="inputList"
+					id="domainList"
+					placeholder="Enter each domain on a new line"
+				></textarea>
+			</div>
+		</div>
+
+		<script src="popup.js"></script>
+	</body>
+</html>
